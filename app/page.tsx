@@ -6,7 +6,7 @@ import { Calculator, Gauge, DollarSign, Activity, ArrowRightLeft, Sparkles, Zap,
 export default function HomePage() {
   return (
     <div className="min-h-screen">
-      {/* Hero Section */}
+    
       <section className="relative overflow-hidden bg-gradient-to-br from-primary/20 via-background to-accent/20 animate-gradient py-20 px-4">
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_50%,rgba(168,85,247,0.1),transparent_50%)]" />
         <div className="container mx-auto max-w-6xl relative z-10">

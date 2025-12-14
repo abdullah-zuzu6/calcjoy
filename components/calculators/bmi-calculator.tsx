@@ -7,7 +7,7 @@ import { Input } from "@/components/ui/input"
 import { Label } from "@/components/ui/label"
 import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group"
 
-export function BmiCalculator() {
+export function BmiCalculator(){
   const [unit, setUnit] = useState<"metric" | "imperial">("metric")
   const [weight, setWeight] = useState("")
   const [height, setHeight] = useState("")
