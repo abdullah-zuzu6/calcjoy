@@ -36,8 +36,8 @@ export default function ContactPage() {
     {
       icon: Phone,
       label: "Phone",
-      value: "+1 (234) 567-890",
-      href: "tel:+1234567890",
+      value: "+92 318 4264113",
+      href: "+92 318 4264113",
     },
   ]
 
@@ -135,73 +135,7 @@ export default function ContactPage() {
               </p>
             </motion.div>
           </motion.div>
-
-          {/* Contact Form */}
-          <motion.div
-            initial={{ opacity: 0, x: 20 }}
-            animate={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.6, delay: 0.3 }}
-          >
-            <div className="bg-card border border-border rounded-xl p-8">
-              <h2 className="text-2xl font-bold mb-6">Send a Message</h2>
-              <form onSubmit={handleSubmit} className="space-y-6">
-                <div>
-                  <label htmlFor="name" className="block text-sm font-medium mb-2">
-                    Your Name
-                  </label>
-                  <input
-                    type="text"
-                    id="name"
-                    required
-                    value={formData.name}
-                    onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-                    className="w-full px-4 py-3 bg-background border border-border rounded-lg focus:outline-none focus:ring-2 focus:ring-primary transition-all"
-                    placeholder="John Doe"
-                  />
-                </div>
-
-                <div>
-                  <label htmlFor="email" className="block text-sm font-medium mb-2">
-                    Email Address
-                  </label>
-                  <input
-                    type="email"
-                    id="email"
-                    required
-                    value={formData.email}
-                    onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-                    className="w-full px-4 py-3 bg-background border border-border rounded-lg focus:outline-none focus:ring-2 focus:ring-primary transition-all"
-                    placeholder="john@example.com"
-                  />
-                </div>
-
-                <div>
-                  <label htmlFor="message" className="block text-sm font-medium mb-2">
-                    Message
-                  </label>
-                  <textarea
-                    id="message"
-                    required
-                    rows={5}
-                    value={formData.message}
-                    onChange={(e) => setFormData({ ...formData, message: e.target.value })}
-                    className="w-full px-4 py-3 bg-background border border-border rounded-lg focus:outline-none focus:ring-2 focus:ring-primary transition-all resize-none"
-                    placeholder="Tell me about your project..."
-                  />
-                </div>
-
-                <motion.button
-                  type="submit"
-                  whileHover={{ scale: 1.02 }}
-                  whileTap={{ scale: 0.98 }}
-                  className="w-full flex items-center justify-center gap-2 bg-primary text-primary-foreground px-6 py-4 rounded-lg font-medium hover:bg-primary/90 transition-colors"
-                >
-                  <Send size={20} />
-                  Send Message
-                </motion.button>
-              </form>
-            </div>
-          </motion.div>
+          
         </div>
       </div>
     </div>
